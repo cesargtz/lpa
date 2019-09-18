@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"By @name on @date":"Por","By @name":"Por"}}};
