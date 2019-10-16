@@ -357,6 +357,8 @@ body {
 
 #page-wrapper {
   overflow-x: hidden; }
+  .init-page-wrapper{
+    margin-top: 10vh;}
   #page-wrapper a {
     text-decoration: none; }
     #page-wrapper a:hover {
@@ -1259,7 +1261,7 @@ select {
       zoom: 1;
       *display: inline; }
     #block-fominisnow p span {
-      padding-top: 10px; }
+      padding-top: 0px; }
     #block-fominisnow p img {
       padding-right: 5px;
       font-size: 1.8rem; }
@@ -1397,7 +1399,7 @@ select {
       max-width: 60%; } }
   @media (min-width: 1280px) {
     .path-frontpage #block-logo img {
-      max-width: 50%; } }
+      max-width: 46%; } }
   .path-frontpage #block-logo a {
     pointer-events: none;
     cursor: default; }

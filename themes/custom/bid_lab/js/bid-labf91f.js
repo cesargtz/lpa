@@ -103,6 +103,11 @@ function scrollToDiv(_link) {
 
 
 // César code
+// document.querySelector('#modalWhat').addEventListener('click',()=>{
+//   alert('que pedo 2')
+// })
+
+
 
 $('.questions_contain_slick').slick({
   slidesToShow: 2,
@@ -113,7 +118,8 @@ $('.questions_contain_slick').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true
+        dots: true,
+        arrows:false,
       }
     },
   ]
@@ -130,12 +136,44 @@ $('.service-contain-slick').slick({
     {
       breakpoint: 1000,
       settings: {
+        autoplay:true,
+        autoplaySpeed:3000,
         slidesToShow: 1,
         slidesToScroll: 1,
+        dots: true,
+        arrows:false,
       }
     },
   ]
 });
+if (document.getElementById('modalWhat')){
+  $("#modalWhat").animatedModal({
+    color:'#43A59B',
+    animatedIn:'zoomIn',
+    animatedOut: 'bounceOut',
+    animationDuration:'.4s'
+  });
+}
+
+if (document.getElementById('modalCalender')){
+  $("#modalCalender").animatedModal({
+    color:'#43A59B',
+    animatedIn:'zoomIn',
+    animatedOut: 'bounceOut',
+    animationDuration:'.4s'
+  });
+}
+
+
+if (document.getElementById('modalContracts')){
+  $("#modalContracts").animatedModal({
+    color:'#43A59B',
+    animatedIn:'zoomIn',
+    animatedOut: 'bounceOut',
+    animationDuration:'.4s'
+  });
+}
+
 // autoplay: 800,
 // infinite:true,
 

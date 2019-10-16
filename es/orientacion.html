@@ -28,7 +28,7 @@
   <link rel="stylesheet" media="all" href="../../cdn.bootcss.com/simplePagination.js/1.6/simplePagination.min.css" />
   <link rel="stylesheet" media="all" href="../modules/contrib/sidr/sidrf91f.css?ptb6b8" />
   <link rel="stylesheet" media="all" href="../libraries/sidr/stylesheets/jquery.sidr.lightf91f.css?ptb6b8" />
-  <link rel="stylesheet" media="all"
+
 
   <link rel="stylesheet" media="all" href="../themes/custom/bid_lab/css/contrib/normalizef91f.css?ptb6b8" />
   <link rel="stylesheet" media="all"
@@ -41,6 +41,8 @@
   <link rel="stylesheet" media="all" href="../themes/custom/bid_lab/css/contrib/colorbox/colorboxf91f.css?ptb6b8" />
   <link rel="stylesheet" media="all" href="../themes/custom/bid_lab/css/bid-labf91f.css?ptb6b8" />
   <link rel="stylesheet" media="all" href="../themes/legal/css/legal.css" />
+  <link rel="stylesheet" href="../themes/legal/css/animete.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 
   <!--[if lte IE 8]>
 <script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
@@ -90,9 +92,11 @@
 
                 <div
                   class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                  <p><a href="../es.html"><img alt="BID-LAB" data-entity-type="file"
+                  <p>
+                      <a><img class="logo-lpa" alt="PuntoLegal" data-entity-type="file"
                         data-entity-uuid="d5e37f47-0a35-45e1-9ecf-9b44259d6377"
-                        src="../sites/default/files/inline-images/animacion-BID-Lab.gif" /></a></p>
+                        src="../themes/legal/images/idea_logo.png"/>
+                      </p>
 
                 </div>
 
@@ -120,7 +124,7 @@
                     <a href="../es.html" data-drupal-link-system-path="node/1">Inicio</a>
                   </li>
                   <li class="menu-item menu-item--expanded menu-item--active-trail">
-                    <a href="nosotros.html" data-drupal-link-system-path="node/2" class="is-active">Nosotros</a>
+                    <a href="nosotros.html" data-drupal-link-system-path="node/2">Nosotros</a>
                     <ul class="menu">
                       <li class="menu-item">
                           <a href="nosotros.html#page-wrapper" class="sub_menu is-active"
@@ -178,7 +182,7 @@
   
                   </li>
                   <li class="menu-item">
-                    <a href="orientacion.html" data-drupal-link-system-path="node/827">Necesitas Orientación</a>
+                    <a href="orientacion.html" data-drupal-link-system-path="node/827" class="is-active">Orientación</a>
                   </li>
                   <li class="menu-item">
                     <a href="publicaciones.html" data-drupal-link-system-path="node/1375">Publicaciones</a>
@@ -191,13 +195,13 @@
 
           </div>
 
-          <div class="region region-secondary-menu">
+          <!-- <div class="region region-secondary-menu">
             <div id="block-pagetitle" class="block block-core block-page-title-block">
               <h1 class="page-title"><span property="schema:name"
-                  class="field field--name-title field--type-string field--label-hidden">Noticias</span>
+                  class="field field--name-title field--type-string field--label-hidden"></span>
               </h1>
             </div>
-          </div>
+          </div> -->
 
         </div>
       </header>
@@ -241,12 +245,21 @@
                                         <!-- <img src="https://images.unsplash.com/photo-1558274862-fb21bb917cd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt=""> -->
                                        <div class="service-wrapper">
                                           <div class="service-contain-slick">
-                                              <div class="item_service">
+                                              <!-- <div class="item_service">
                                                 <div class="item_wrapper">
                                                   <img src="../themes/legal/images/ic_telefono.png" alt="Hotline">
                                                   <h3>Hotline 900</h3>
                                                   <p>Para asesorías telefónicas y casos urgentes.</p>
                                                   <a href="#"><span>Más Información</span></a>
+                                                </div>
+                                              </div> -->
+                                              <div class="item_service">
+                                                <div class="item_wrapper">
+                                                    <img src="../themes/legal/images/ic_whats.png" alt="WhatsApp">
+                                                    <h3>WhatsApp</h3>
+                                                    <p>Asistencia por video llamada o por escrito.</p>
+                                                    <a id="modalWhat" href="#animatedModal"><span>Ir a WhatsApp</span></a>
+                                                    <!-- <a href="#"><span>M</span></a> -->
                                                 </div>
                                               </div>
                                               <div class="item_service">
@@ -254,7 +267,7 @@
                                                     <img src="../themes/legal/images/ic_calendario.png" alt="Calendario">
                                                     <h3>Calendario</h3>
                                                     <p>Agenda Citas Presenciales vía online o telefonica.</p>
-                                                    <a href="#"><span>Más Información</span></a>
+                                                    <a id="modalCalender" href="#animateModalCalender"><span>Ir a Calendario</span></a>
                                                 </div>
                                               </div>
                                               <div class="item_service">
@@ -262,15 +275,7 @@
                                                     <img src="../themes/legal/images/ic_documento.png" alt="Contratos">
                                                     <h3>Contratos</h3>
                                                     <p>Generar contratos y consultas comunes.</p>
-                                                    <a href="#"><span>Más Información</span></a>
-                                                </div>
-                                              </div>
-                                              <div class="item_service">
-                                                <div class="item_wrapper">
-                                                    <img src="../themes/legal/images/ic_whats.png" alt="WhatsApp">
-                                                    <h3>WhatsApp</h3>
-                                                    <p>Asistencia por video llamada o por escrito.</p>
-                                                    <a href="#"><span>Más Información</span></a>
+                                                    <a id="modalContracts" href="#animatedModalContracts"><span>Ir a Contratos</span></a>
                                                 </div>
                                               </div>
                                               <div class="item_service">
@@ -278,7 +283,7 @@
                                                       <img src="../themes/legal/images/ic_proceso.png" alt="Tramites">
                                                       <h3>Trámites</h3>
                                                       <p>CONAGUA, SAT, IMSS, INFONAVIT, ETC.</p>
-                                                      <a href="#"><span>Más Información</span></a>
+                                                      <a id="modalTramites" href="#"><span>Ir a Trámites</span></a>
                                                   </div>
                                               </div>
                                               <!-- <div class="item_service">
@@ -305,6 +310,166 @@
         </div>
       </div>
 
+      <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+              <img src="../themes/legal/images/cross.png" alt="Close">
+        </div>
+            
+        <div class="modal-content">
+              <div class="modal-content-wrapper">
+                <p class="title-modal">¿Cómo Funciona?</p>
+                <div class="container-data">
+                    <div class="modal-col-1">
+                      <div class="item-col">
+                          <div>
+                            <p class="sub-title-modal"><b>Contacto</b></p>
+                            <p class="body-text-modal" ><span>1 </span>Mandanos un WhatsApp y uno de nuestros asesores te atendera. Es rapido y sencillo.</p>
+                          </div>
+                          <div>
+                            <p class="sub-title-modal"><b>Cuéntanos</b></p>
+                            <p class="body-text-modal"><span>2 </span>Completa un sencillo formulario para saber más de tu caso</p>
+                          </div>
+                      </div>
+                      <div class="sub-item-col">
+                          <p class="sub-title-modal"><b>Comunícate</b></p>
+                          <p class="body-text-modal center-text-modal"><span>3 </span>Estamos listo, vamos a trabajar</p>
+                      </div>
+                      <div class="form-whatsaap">
+                            <form action="">
+                              <input name="name-form" type="text" placeholder="Nombre">
+                              <select name="type-form" name="type" required>
+                                <option selected  value="1">Tipo de consulta...</option>
+                                <option value="asesoria">Asesoria</option>
+                                <option value="consulta">Consulta</option>
+                                <option value="seguimiento">Seguimiento</option>
+                              </select> 
+                              <textarea name="desc-form" type="text" placeholder="Descripción" style="height:120px;"></textarea>
+                              <a id="send-whatsapp" href="#"><span>Enviar</span></a>
+                            </form>
+                      </div>
+                    </div>
+                    <div class="modal-col-2">
+                      <img src="../themes/legal/images/whatsapp.jpg" alt="">
+                    </div>
+                  </div>
+                </div>           
+        </div>
+      </div>
+
+      <div id="animateModalCalender">
+        <div class="close-animateModalCalender"> 
+          <img src="../themes/legal/images/cross.png" alt="Close">
+        </div>
+        <div class="modal-content">
+          <div class="modal-content-wrapper">
+            <p class="title-modal">Agenda una cita, nosotros te ayudamos.</p>
+            <div class="container-data">
+                <div class="modal-col-1">
+                  <div class="item-col">
+                      <div>
+                        <p class="sub-title-modal sub-title-modal-big"><b>Elige el día</b></p>
+                        <p class="body-text-modal body-text-modal-big" ><span></span>Selecciona la fecha para tu consulta.</p>
+                      </div>
+                      <div>
+                        <p class="sub-title-modal sub-title-modal-big"><b>Asiste</b></p>
+                        <p class="body-text-modal body-text-modal-big"><span></span>Uno de nuestros asesores estara esperándote.</p>
+                      </div>
+                  </div>
+                  <div class="form-whatsaap form-narrow">
+                        <form action="">
+                          <input name="name-form-calendar" type="text" placeholder="Nombre">
+                          <input name="date-form-calendar" type="date" placeholder="Fecha">
+                          <input type="time" min="09:00" max="18:00" value="13:30" name="time-form-calendar">
+                          <select name="type-form-calendar" name="type" required>
+                            <option selected  value="1">Medio..</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="llamada">Llamada</option>
+                            <option value="online">En linea</option>
+                          </select> 
+                          <a id="send-calendar" class="margin-btn-top" href="#"><span>Enviar</span></a>
+                          <small>Horario de 9am a 6pm.</small>
+                        </form>  
+                  </div>
+                </div>
+                <div class="modal-col-2">
+                  <img class="img-calendar" src="../themes/legal/images/calendar.png" alt="">
+                </div>
+              </div>
+            </div>           
+        </div>
+      </div>
+
+      <div id="animatedModalContracts">
+          <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+          <div class="close-animatedModalContracts"> 
+                <img src="../themes/legal/images/cross.png" alt="Close">
+          </div>
+              
+          <div class="modal-content">
+                <div class="modal-content-wrapper">
+                  <p class="title-modal">¿Cómo Funciona?</p>
+                  <div class="container-data">
+                      <div class="modal-col-1">
+                        <div class="item-col">
+                            <div>
+                              <p class="sub-title-modal"><b>Elige</b></p>
+                              <p class="body-text-modal" ><span>1 </span>Seleciona entre los difentes tipos de contrato y consultas comunes.</p>
+                            </div>
+                            <div>
+                              <p class="sub-title-modal"><b>Sigue los pasos</b></p>
+                              <p class="body-text-modal"><span>2 </span>Sigue las instrucciones, en unos cuantos pasos tendras tu contrato listo.</p>
+                            </div>
+                        </div>
+                        <div class="sub-item-col">
+                            <p class="sub-title-modal"><b>Descarga</b></p>
+                            <p class="body-text-modal center-text-modal"><span>3 </span>Decarga, el contrato esta listo para usarlo y proceder.</p>
+                        </div>
+                        <div class="form-whatsaap">
+                              <form action="">
+                                <p>Elige el tipo de consulta que necesitas:</p>
+                                <select name="type-form" name="type" required>
+                                  <option selected  value="1">Consultas..</option>
+                                  <optgroup label="Inmuebles">
+                                    <option value="arrendamientos">Arrendamientos</option>
+                                    <option value="ventas">Ventas</option>
+                                  </optgroup>
+                                  <optgroup label="Préstamos de dinero">
+                                    <option value="contrato-dinero">Contratos</option>
+                                    <option value="pagares">Pagarés</option>
+                                    <option value="cobro-judicial">Cobro judicial</option>
+                                  </optgroup>
+                                  <optgroup label="Contratos Laborales">
+                                    <option value="trabajadores">Por trabajadores</option>
+                                    <option value="prestacion-servicios">Por prestanción de servicios</option>
+                                  </optgroup>
+                                  <optgroup label="Trámites Sencillos">
+                                    <option value="menor-edad">Autorización de menores de edad para viajar al extranjero</option>
+                                    <option value="constitucion">Constitución de empresas</option>
+                                    <option value="poderes">Poderes</option>
+                                    <option value="divorcios">Convenios de divorcio</option>
+                                    <option value="herencias">Trámites de herencias</option>
+                                  </optgroup>
+                                  <optgroup label="CONAGUA">
+                                      <option value="conagua-prorrogas">Prórrogas de títulos y amparos</option>
+                                      <option value="cesion">Cesión de volumen</option>
+                                    </option>
+                                  <optgroup label="CONDUSEF">
+                                    <option value="buro-credito">Buró de crédito incorrecto</option>
+                                  </optgroup>
+                                </select> 
+                                <a id="send-whatsapp" href="#"><span>Continuar</span></a>
+                              </form>
+                        </div>
+                      </div>
+                      <div class="modal-col-2">
+                        <img class="img-contract" src="../themes/legal/images/contract.png" alt="">
+                      </div>
+                    </div>
+                  </div>           
+          </div>
+        </div>
+
       <footer class="site-footer footer-ppal" id="bid_lab_footer">
         <div class="section layout-container clearfix container">
           <div class="container-region-footer">
@@ -323,25 +488,18 @@
     </div>
   </div>
 
-
-
-  <script src="https://bidlab.org/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
-  <script src="https://bidlab.org/core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
-  <script src="https://bidlab.org/core/assets/vendor/jquery/jquery-extend-3.4.0.js?v=3.2.1"></script>
-  <script src="https://bidlab.org/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
-  <script src="https://bidlab.org/core/misc/drupalSettingsLoader.js?v=8.7.3"></script>
+ 
+  <script src="../themes/legal/js/main.js"></script>
+  <script src="../themes/legal/js/librarys.js" ></script>
   <script src="../sites/default/files/languages/es_Q0PHO3TlX12wMTSRCeHTEKLiMF7LnKJfgZUk0Nbq9rQf91f.js?ptb6b8"></script>
-  <script src="https://bidlab.org/core/misc/drupal.js?v=8.7.3"></script>
-  <script src="https://bidlab.org/core/misc/drupal.init.js?v=8.7.3"></script>
-  <script src="https://bidlab.org/core/misc/progress.js?v=8.7.3"></script>
-  <script src="https://bidlab.org/core/misc/ajax.js?v=8.7.3"></script>
+  
   <script src="../themes/custom/bid_lab/js/selectInspiration/classief91f.js?ptb6b8"></script>
   <script src="../themes/custom/bid_lab/js/selectInspiration/selectFxf91f.js?ptb6b8"></script>
+  <script src="../themes/legal/js/animatedModal.min.js"></script>
   <script src="../themes/custom/bid_lab/js/slick/slickf91f.js?ptb6b8"></script>
   <script src="../themes/custom/bid_lab/js/colorbox/jquery.colorboxf91f.js?ptb6b8"></script>
   <script src="../themes/custom/bid_lab/js/bid-labf91f.js?ptb6b8"></script>
   <script src="../../cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
-  <!-- <script src="../modules/custom/bidlab_news/js/newsf91f.js?ptb6b8"></script> -->
   <script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script src="../../cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
   <script src="../../cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js">
@@ -349,10 +507,7 @@
   <script src="../../cdn.bootcss.com/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
   <script src="../libraries/sidr/jquery.sidr.min0449.js?v=2.2.x"></script>
   <script src="../modules/contrib/sidr/sidrf91f.js?ptb6b8"></script>
-  <script src="https://bidlab.org/core/assets/vendor/jquery-form/jquery.form.min.js?v=4.22"></script>
-  <script src="https://bidlab.org/core/modules/views/js/base.js?v=8.7.3"></script>
-  <script src="https://bidlab.org/core/modules/views/js/ajax_view.js?v=8.7.3"></script>
-  <script src="https://bidlab.org/core/misc/debounce.js?v=8.7.3"></script>
+  
   <script src="../modules/contrib/views_infinite_scroll/js/infinite-scrolla1f9.js?v=8.7.3"></script>
   <script src="../modules/contrib/better_exposed_filters/js/better_exposed_filters8e52.js?v=3.x"></script>
   <script src="../modules/contrib/better_exposed_filters/js/auto_submit8e52.js?v=3.x"></script>

@@ -1,3 +1,11 @@
+.logo-lpa {
+	width: 50%;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.menu{
+	margin-top: 25px !important;
+}
 .question_wrap {
 	width: 100%;
 	height: auto;
@@ -19,6 +27,20 @@
 	margin: 0 auto;
 	text-align: center
 }
+.slick-dots li button::before {
+	font-size: 16px;
+	color: #fff;
+	opacity: 0.7;
+  }
+
+  .slick-dots li.slick-active button::before {
+	color: #fff;
+	opacity: 1;
+  }
+  .slick-dots {
+	position: relative !important;
+	bottom: -35px !important;
+}
 .question_image, .questions_text {
 	display: inline;
 	width: 50% !important;
@@ -26,6 +48,7 @@
 }
 .question_image img{
 	margin: 10px auto;
+	width: 80% !important;
 }
 .questions_text {
 	float: right;
@@ -34,7 +57,8 @@
 	
 }
 .questions_text p {
-	font-size: 1.5rem !important;
+	font-family: Gotham-book !important; 
+	font-size: 1.6rem !important;
 	margin: 10px 0 0 0;
 	overflow:scroll;
 	text-align: left;
@@ -100,7 +124,7 @@
 .orien_background {
 	display: inline-block;
 	width: 100%;
-	height: 100vh;
+	height: auto;
 	background-image: url("https://images.unsplash.com/photo-1558274862-fb21bb917cd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 	background-size: cover;
 	background-position-y: center;
@@ -123,7 +147,7 @@
 }
 .item_service {
 	/* width: 300px !important; */
-	height: 400px;
+	height: 360px;
 	margin: 0 auto;
 	transition: 300ms;
 	overflow: visible;
@@ -172,3 +196,287 @@
 	text-decoration: none;
 	transition: 200ms;
 }
+
+
+.close-animatedModal,
+.close-animateModalCalender,
+.close-animatedModalContracts{
+	margin-top: 20px;
+	text-align: center;	
+}
+.close-animatedModal img,
+.close-animateModalCalender img,
+.close-animatedModalContracts img {
+	margin: 5px;
+	width: 35px;
+	transition: 200ms;
+}
+
+.close-animatedModal img:hover,
+.close-animateModalCalender img:hover,
+.close-animatedModalContracts img:hover{
+	transform:rotate(90deg) 
+}
+.modal-content-wrapper{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin: 10px;
+}
+.container-data{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 95%;
+	/* border: 1px solid blue; */
+	margin: 25px auto;
+	height: 70vh;
+}
+
+.title-modal {
+	margin: 0 auto;
+	color: white !important;
+	font-size: 3vw !important;
+}
+.modal-col-1 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 75vw;
+	height: auto;
+	/* border: 1px solid red; */
+	margin: 0 auto;
+}
+.item-col{
+	display: flex;
+	flex-direction: row;
+	/* border: 1px solid orange; */
+	width: 100%;
+}
+.item-col > div{
+	/* width: 50%; */
+	margin:10px;
+	/* border: 1px solid violet; */
+}
+.item-col > div:nth-child(1) {
+	padding: 0 20px;
+}
+.sub-item-col{
+	/* border: 1px solid red; */
+	/* width: 60vw; */
+	height: auto;
+	margin: 10px;
+	margin-bottom: 30px;
+}
+.modal-col-2 {
+	width: 40vw;
+	height: 70vh;
+	text-align: center;
+	align-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal-col-2 img{
+	width: 85%;
+	border-radius: 50%;
+}
+.img-calendar{
+	width: 90% !important;
+	border-radius: 0 !important;
+}
+.img-contract{
+	width: 80% !important;
+	/* margin-bottom: 25px; */
+	border-radius: 0 !important;
+}
+.sub-title-modal{
+	color: #F2B604 !important;
+	text-align: center;
+	font-size: 2.5em !important;
+	margin: 0;
+}
+.sub-title-modal-big{
+	font-size: 3.5em !important;
+}
+.body-text-modal {
+	color:  white !important;
+	text-shadow: 1px 1px 2px #424242;
+	font-size: 1.5em !important;
+	margin: 0;
+}
+.body-text-modal-big{
+	font-size: 2em !important;
+	text-align: center;
+}
+.center-text-modal{
+	text-align: center;
+}
+
+.item-col div p span, .sub-item-col  p span{
+	color: #F25C5C !important;
+	font-size: 2.5vw;
+	margin-left: 5px;
+	margin: 0 7px;
+}
+
+.form-whatsaap {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.form-narrow{
+	width: 50% !important;
+	margin-top: 50px !important;
+}
+
+.form-whatsaap form {
+	display: flex;
+	flex-flow: column;
+	margin-bottom: 20px;
+}
+
+.form-whatsaap form input, .form-whatsaap form select,
+.form-whatsaap form textarea {
+	margin-bottom: 2px;
+	height: 40px;
+	padding: 2px;
+	opacity: 0.8;
+	font-size: 1.8em;
+	color: #808080;
+	font-weight: 100;
+}
+.form-whatsaap form input::placeholder,
+.form-whatsaap form textarea::placeholder {
+	opacity: 1;
+}
+form span {
+	display: block;
+	width: 150px;
+	height: 40px;
+	background: #F25C5C;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 1.8em;
+	color: white;
+	box-shadow: .5px .5px 1px #5e5e5e;
+	float: right;
+	margin-top: 2px;
+	transition: 300ms;
+}
+form span:hover{
+	transform: scale(1.05);
+	background: rgb(221, 93, 93);
+}
+.margin-btn-top{
+	margin-top:5px !important;
+}
+
+form small {
+	color: white;
+	text-align: right;
+	margin: 5px;
+	font-size: 8px;
+}
+form p {
+	color: #e8e8e8 !important;
+	text-shadow : .5px .5px 1px #5e5e5e;
+}
+
+
+@media (max-width: 890px) {
+	.item-col{
+		flex-wrap: wrap;
+	}
+	.container-data{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.item-col > div:nth-child(1) {
+		padding: 0;
+	}
+	.modal-col-2 img {
+		width: 70%;
+	}
+	.modal-col-1{
+		order: 2;
+	}
+	.modal-col-2{
+		order:1;
+		align-items: flex-start;
+		height: auto;
+	}
+	.center-text-modal {
+		text-align: inherit;
+	}
+	.sub-title-modal{
+		text-align: start;
+	}
+	.img-calendar {
+		width: 70% !important;
+		margin-bottom: 25px;
+	}
+	.form-narrow{
+		width: 90% !important;
+		margin-top: 25px !important;
+	}
+	
+}
+
+@media (max-width: 765px) {
+	.nosotros_bak_img {
+		transform: rotate(-23deg);
+		margin-top: 70px;
+	}
+	.nosotros_bak_img3 {
+		width: 70% !important;
+		float: right;
+		opacity: 0.6;
+		margin-bottom: 10px;
+	}
+	.nosotros_bak_img4 {
+		margin-top: 55px;
+	}
+	.question_image {
+		display: block !important;
+		height: 100px !important;
+		margin-top: -20px !important;
+		overflow: visible !important;
+		margin-bottom: 10px !important;
+	}
+	.questions_text{
+		display: block !important;
+		width: 100% !important;
+	}
+	.question_image img {
+		width: 30% !important;
+		object-fit: contain;
+	}
+	.question_image, .question_text{
+		width: 100% !important;
+	}
+	.questions_text h3 {
+		font-size: 1.8rem !important;
+	}
+	.questions_text p {
+		font-size: 1.4rem !important;
+		overflow: scroll !important;
+	}
+	/* .slick-next {
+		right: -20px !important;
+	}
+	.slick-prev {
+		left: -20px !important;
+	} */
+
+	/* productos */
+	.producto_2 {
+		position: absolute;
+		top: -75px;
+		right: 20px;
+	}
+
+
+}
+
